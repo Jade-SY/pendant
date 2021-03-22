@@ -23,13 +23,14 @@ body{
     opacity: 1;
   }
 }
+
 @keyframes LFX{
   5%{
     transform: scale(.5);
     opacity: 1;
   }
   6%{
-    transform: scale(1.2);
+    transform: scale(2);
     opacity: 1;
   }
   30%{
@@ -161,7 +162,20 @@ body{
   width: 160px;
   height: 160px;
   border-radius: 50%;
-  background: url(../img/200w.webp)no-repeat center center/cover;
-  opacity: .5;
+  background: url(../img/light7.gif)no-repeat center center/cover;
+  opacity: .3;
   mix-blend-mode: overlay;
+  overflow: hidden;
+}
+
+@media (max-width:768px){
+  .container3{
+    width: 100vw;
+    height: 100vh;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    background: url(../img/new.png)no-repeat center center/cover;
+    overflow: hidden; 
+  }
 }
