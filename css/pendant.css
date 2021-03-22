@@ -156,11 +156,11 @@ body{
 
 .prism{
   position: absolute;
-  top: 105px;
+  top: 115px;
   left: 50%;
   transform: translateX(-50%);
-  width: 160px;
-  height: 160px;
+  width: 150px;
+  height: 150px;
   border-radius: 50%;
   background: url(../img/light7.gif)no-repeat center center/cover;
   opacity: .2;
