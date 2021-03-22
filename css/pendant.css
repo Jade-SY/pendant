@@ -289,9 +289,7 @@ body{
   transform: translateX(-50%);
   mix-blend-mode: normal;
 }
-.container3 .lfx-box{
-  
-}
+
 .prism{
   position: absolute;
   top: 105px;
@@ -300,7 +298,7 @@ body{
   width: 160px;
   height: 160px;
   border-radius: 50%;
-  /* background: url(../img/200w.webp)no-repeat center center/cover; */
+  background: url(../img/200w.webp)no-repeat center center/cover;
   opacity: .5;
   mix-blend-mode: overlay;
 }
