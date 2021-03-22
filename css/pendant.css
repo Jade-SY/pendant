@@ -163,7 +163,7 @@ body{
   height: 160px;
   border-radius: 50%;
   background: url(../img/light7.gif)no-repeat center center/cover;
-  opacity: .3;
+  opacity: .2;
   mix-blend-mode: overlay;
   overflow: hidden;
 }
