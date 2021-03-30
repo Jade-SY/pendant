@@ -77,6 +77,14 @@ body{
   animation: lightEffectFadeIn 3s ease-out ;
   opacity: 0;
 }
+.ds{
+  width: 140px;
+  height: 140px; 
+}
+.ds > img{
+
+  
+}
 
 .pendant .lfx{
   z-index: 11;
@@ -85,7 +93,7 @@ body{
   left: 50%;
   width: 20px;
   height: 20px;
-  background: url(../img/lighteffect2.png)no-repeat center center/contain;
+  background: url(../img/lighteffect.png)no-repeat center center/contain;
   transform: scale(0);
   opacity: 0;
   animation: LFX 2.2s .5s ease-out infinite;
@@ -97,15 +105,8 @@ body{
   left: 45px;
   width: 20px;
   height: 20px;
-  background: url(../img/lighteffect2.png)no-repeat center center/contain;
+  background: url(../img/lighteffect.png)no-repeat center center/contain;
   transform: scale(0);
   opacity: 0;
   animation: LFX 2.2s ease-out infinite;
-}
-
-@media(max-width: 768px){
-  .container{
-    width: 100vw;
-    height: 100vh;
-  }
 }
