@@ -7,7 +7,6 @@
     transform: rotate(45deg) translateX(0) translateY(0);
     opacity: 0; }
   54% {
-    width: 3px;
     height: 150px;
     -webkit-transform: rotate(45deg) translateX(0) translateY(450px);
     transform: rotate(45deg) translateX(0) translateY(450px);
@@ -76,14 +75,19 @@ background: rgb(168, 168, 172);
 .shooting-0{
   top:0;
   right: 30%;
-  animation: shootingStar 3s normal 1.5s infinite forwards;
+  animation: shootingStar 2.8s normal 1.5s infinite forwards;
 }
 .shooting-1{
   top: 20%;
   right: 15%;
   height: 200px;
-
-  animation: shootingStar 3s normal infinite forwards;
+  animation: shootingStar 2.8s normal infinite forwards;
+}
+.shooting-2{
+  top: -10%;
+  right: -15%;
+  height: 200px;
+  animation: shootingStar 2.8s normal .7s infinite forwards;
 }
 .sparkle-0{
   top: 10%;
