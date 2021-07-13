@@ -45,17 +45,14 @@ background: rgb(168, 168, 172);
 
 .container{
   position: relative;
-  width: 375px;
-  height: 812px;  
+  max-width: 600px;
+  width: 750px;
+  height: 100vh;  
   overflow: hidden;
   margin: 0 auto;
-  background : url(../img/night_bg.png)center center/cover;
+  background : url(../img/night_bg.jpg)center center/cover;
 }
-@media screen and (max-width:750px) {
-  .container{
-    width:100%;
-  }
-}
+
 .star-container{
   position: absolute;
   top:0;
@@ -111,44 +108,56 @@ background: rgb(168, 168, 172);
 }
 
 .logo{
-  z-index: 10;
-  position: absolute;
-  top: 152px;
-  left: calc( 50% - 70px );
   width: 140px;
   height: 114px;
-  
+  margin: 0 auto;
+}
+
+.login {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 80%;
+  height: 700px;
+  background: url(../img/login-box.png)no-repeat center center/contain;
 }
 
 .campfire{
   position: absolute;
-  right: 10%;
+  right: 13%;
   bottom: 20px;
-  width: 100px;
+  width: 4vw;
+  min-width: 80px;
   height: 150px;
   border-radius: 50%;
   background: url(../img/fire.gif)no-repeat center center/contain;
   mix-blend-mode: lighten;
 }
 .fire-light{
-  z-index: 3;
+  z-index: 10;
   position: absolute;
-  right: 10%;
+  right: 13%;
   bottom: 40px;
-  width: 100px;
+  width: 4vw;
   height: 80px;
   border-radius: 50%;
   background: radial-gradient(#fb8130,rgb(255, 235, 55), transparent 70%);
   mix-blend-mode: overlay;
 }
-
-.login {
-  position: absolute;
-  top: 290px;
-  left: calc( 50% - 171px );
-  width: 343px;
-  height: 248px;
-  background: url(../img/login-box.png)no-repeat center center/contain;
+.light-overlay{
+  width: 6vw;
+  height: 100px;
+}
+@media screen and (max-width:750px) {
+  .container{
+    width:100%;
+  }
+  .logo{
+    width: 140px;
+    height: 114px;
+    margin: 0 auto;
+  }
 }
 
 /*
