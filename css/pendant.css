@@ -1,112 +1,156 @@
 @charset 'utf-8';
 
-
-
-body{
-  width: 100%;
-  height: 100vh;
-  color: #e5e5e5;
-  background: radial-gradient(#343637 , #1C1D1E);
-}
-
-.wrap{
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 100%;
-  height: 100%;
-}
-
-@keyframes lightEffectFadeIn{
-  10%{
-    opacity: 1;
+@keyframes shootingStar {
+  0% {
+    height: 2px;
+    -webkit-transform: rotate(48deg) translateX(0) translateY(0);
+    transform: rotate(48deg) translateX(0) translateY(0);
+    opacity: 0; }
+  60% {
+    height: 300px;
+    -webkit-transform: rotate(48deg) translateX(0) translateY(450px);
+    transform: rotate(48deg) translateX(0) translateY(450px);
+    opacity: 0.5; }
+  100% {
+    height: 60px;
+    -webkit-transform: rotate(48deg) translateX(0) translateY(800px);
+    transform: rotate(48deg) translateX(0) translateY(800px);
+    opacity: 0; }
   }
+@keyframes shootingStar1 {
+  0% {
+    height: 2px;
+    -webkit-transform: rotate(48deg) translateX(0) translateY(0);
+    transform: rotate(48deg) translateX(0) translateY(0);
+    opacity: 0; }
+  60% {
+    height: 150px;
+    -webkit-transform: rotate(48deg) translateX(0) translateY(150px);
+    transform: rotate(48deg) translateX(0) translateY(150px);
+    opacity: 0.5; }
+  100% {
+    height: 10px;
+    -webkit-transform: rotate(48deg) translateX(0) translateY(300px);
+    transform: rotate(48deg) translateX(0) translateY(300px);
+    opacity: 0; }
+  }
+
+@keyframes sparkle {
+  0% {
+    opacity: 1; }
   50%{
-    opacity: 1;
-  }
-}
-
-@keyframes LFX{
-  5%{
-    transform: scale(.5);
-    opacity: 1;
-  }
-  6%{
-    transform: scale(1.2);
-    opacity: 1;
-  }
-  30%{
-    transform: scale(0);
+    width: 2px;
+    height: 2px;
+    opacity: .8;
+    }
+  100% {
     opacity: 0;
   }
 }
 
+body{
+width: 100%;
+height: 100%;
+background: rgb(168, 168, 172);
+}
+
 .container{
-  z-index: -1;
   position: relative;
-  margin: 0 auto;
   width: 375px;
-  height: 812px;
-  display: flex;
-  justify-content: center;
-  background: url(../img/background_new.png)no-repeat center center/cover;
-  overflow: hidden; 
+  height: 812px;  
+  overflow: hidden;
+  margin: 0 auto;
+  background : url(../img/night_bg.png)center center/cover;
+}
+@media screen and (max-width:750px) {
+  .container{
+    width:100%;
+  }
+  
+}
+.star{
+  transition: opacity 1000ms cubic-bezier(0.23, 1, 0.32, 1) 0ms;
+}
+.shooting-0{
+  animation: shootingStar 3s normal 1.5s infinite forwards;
+}
+.shooting-1{
+  animation: shootingStar 3s normal infinite forwards;
+}
+.sparkle-0{
+  animation: sparkle 1s ease infinite alternate ;
+}
+.sparkle-1{
+  animation: sparkle 1.2s ease .5s infinite alternate ;
+}
+.sparkle-2{
+  animation: sparkle 1.5s ease .5s infinite alternate ;
+}
+.sparkle-3{
+  animation: sparkle 1s ease 1s infinite alternate ;
 }
 
-.container .pendant{
+.logo{
+  z-index: 10;
   position: absolute;
-  top: 140px;
-  left: 50%;
-  transform: translateX(-50%);
-  width: 130px;
-  height: 160px;
-}
-
-.lighteffect{
-  z-index: 2;
-  position: absolute;
-  top: 50px;
-  left: 40px;
-  width: 50px;
-  height: 80px;
-  border-radius: 50%;
-  background-color: #fff5d5;
-  box-shadow: 0 0 50px 30px #ffeeaf;
-  mix-blend-mode: overlay;
-  transform-origin: center;
-  animation: lightEffectFadeIn 3s ease-out ;
-  opacity: 0;
-}
-.ds{
+  top: 152px;
+  left: calc( 50% - 70px );
   width: 140px;
-  height: 140px; 
-}
-.ds > img{
-
+  height: 114px;
   
 }
 
-.pendant .lfx{
-  z-index: 11;
+.campfire{
   position: absolute;
-  top: 60%;
-  left: 50%;
-  width: 20px;
-  height: 20px;
-  background: url(../img/lighteffect.png)no-repeat center center/contain;
-  transform: scale(0);
-  opacity: 0;
-  animation: LFX 2.2s .5s ease-out infinite;
+  right: 10%;
+  bottom: 20px;
+  width: 100px;
+  height: 150px;
+  border-radius: 50%;
+  background: url(../img/fire.gif)no-repeat center center/contain;
+  mix-blend-mode: lighten;
 }
-.pendant .lfx2{
-  z-index: 11;
+.fire-light{
+  z-index: 3;
   position: absolute;
-  top: 30px;
-  left: 45px;
-  width: 20px;
-  height: 20px;
-  background: url(../img/lighteffect.png)no-repeat center center/contain;
-  transform: scale(0);
-  opacity: 0;
-  animation: LFX 2.2s ease-out infinite;
+  right: 10%;
+  bottom: 40px;
+  width: 100px;
+  height: 80px;
+  border-radius: 50%;
+  background: radial-gradient(#fb8130,rgb(255, 235, 55), transparent 70%);
+  mix-blend-mode: overlay;
 }
+
+.login {
+  position: absolute;
+  top: 290px;
+  left: calc( 50% - 171px );
+  width: 343px;
+  height: 248px;
+  background: url(../img/login-box.png)no-repeat center center/contain;
+}
+
+/*
+그라디언트 보더 버튼 스타일
+
+color: #953BEE;
+  font-weight: bold;
+  border-radius: 24px;
+  background: linear-gradient(#fff, #fff)padding-box, linear-gradient(to right, #E73BEE, #8964ED, #7731D3)border-box;
+  border: 3px solid transparent;
+
+
+
+  position: absolute;
+  top:184px;
+  left:0;
+  width: 375px;
+  height: 375px;
+  border-radius: 16px;
+  border: 1px solid rgba(255,255,255,0.4);
+  background-color: rgba(255,255,255,0.3);
+  backdrop-filter: blur(50px);
+  -webkit-backdrop-filter: blur(50px);
+
+  */
