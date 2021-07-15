@@ -6,17 +6,17 @@
     -webkit-transform: rotate(48deg) translateX(0) translateY(0);
     transform: rotate(48deg) translateX(0) translateY(0);
     opacity: 0; }
-  60% {
-    height: 150px;
-    -webkit-transform: rotate(48deg) translateX(0) translateY(600px);
-    transform: rotate(48deg) translateX(0) translateY(600px);
+  70% {
+    width: 1px;
+    height: 120px;
+    -webkit-transform: rotate(48deg) translateX(0) translateY(400px);
+    transform: rotate(48deg) translateX(0) translateY(400px);
     opacity: 0.5; }
 
   100% {
-    width: 1px;
     height: 1px;
-    -webkit-transform: rotate(48deg) translateX(0) translateY(900px);
-    transform: rotate(48deg) translateX(0) translateY(900px);
+    -webkit-transform: rotate(48deg) translateX(66px) translateY(760px);
+    transform: rotate(48deg) translateX(66px) translateY(760px);
     opacity: 0; }
   }
 
