@@ -50,7 +50,8 @@ background: rgb(168, 168, 172);
   height: 100vh;  
   overflow: hidden;
   margin: 0 auto;
-  background : url(../img/night_bg.jpg)center center/cover;
+  background : url(../img/night_bg.jpg)no-repeat center center/cover
+;
 }
 
 .star-container{
@@ -134,6 +135,7 @@ background: rgb(168, 168, 172);
   background: url(../img/fire.gif)no-repeat center center/contain;
   mix-blend-mode: lighten;
 }
+
 .fire-light{
   z-index: 10;
   position: absolute;
@@ -153,10 +155,8 @@ background: rgb(168, 168, 172);
   .container{
     width:100%;
   }
-  .logo{
-    width: 140px;
-    height: 114px;
-    margin: 0 auto;
+  .login{
+    height: 600px;
   }
 }
 
@@ -183,3 +183,71 @@ color: #953BEE;
   -webkit-backdrop-filter: blur(50px);
 
   */
+
+
+  .content.dashboard .pyro>.before, .content.dashboard .pyro>.after {
+    position: absolute;
+    width: 6px;
+    height: 6px;
+    border-radius: 30%;
+    box-shadow: -120px -218.66667px blue, 248px -16.66667px #00ff84, 190px 16.33333px #002bff, -113px -308.66667px #ffb300, -109px -287.66667px #ffb300, -50px -313.66667px #ff006e, 226px -31.66667px #ff4000, 180px -351.66667px #ffb300, -12px -338.66667px #00f6ff, 220px -388.66667px #99ff00, -69px -27.66667px #ff0400, -111px -339.66667px #6200ff, 155px -237.66667px #00ddff, -152px -380.66667px #00ffd0, -50px -37.66667px #00ffdd, -95px -175.66667px #a6ff00, -88px 10.33333px #0d00ff, 112px -309.66667px #005eff, 69px -415.66667px #ffb300, 168px -100.66667px #ff004c, -244px 24.33333px #ff6600, 97px -325.66667px #ff0066, -211px -182.66667px #00ffa2, 236px -126.66667px #ffb300, 140px -196.66667px #ffb300, 125px -175.66667px #00bbff, 118px -381.66667px #ff002f, 144px -111.66667px #ffae00, 36px -78.66667px #ffb300, -63px -196.66667px #c800ff, -218px -227.66667px #d4ff00, -134px -377.66667px #ea00ff, -36px -412.66667px #ff00d4, 209px -106.66667px #00fff2, 91px -278.66667px #000dff, -22px -191.66667px #9dff00, 139px -392.66667px #a6ff00, 56px -2.66667px #0099ff, -156px -276.66667px #ea00ff, -163px -233.66667px #00fffb, -238px -346.66667px #00ff73, 62px -363.66667px #0088ff, 244px -170.66667px #0062ff, 224px -142.66667px #ffb300, 141px -208.66667px #9000ff, 211px -285.66667px #ff6600, 181px -128.66667px #1e00ff, 90px -123.66667px #ffb300, 189px 70.33333px #00ffc8, -18px -383.66667px #00ff33, 100px -6.66667px #ff008c;
+    -moz-animation: 1s bang ease-out infinite backwards, 1s gravity ease-in infinite backwards, 5s position linear infinite backwards;
+    -webkit-animation: 1s bang ease-out infinite backwards, 1s gravity ease-in infinite backwards, 5s position linear infinite backwards;
+    -o-animation: 1s bang ease-out infinite backwards, 1s gravity ease-in infinite backwards, 5s position linear infinite backwards;
+    -ms-animation: 1s bang ease-out infinite backwards, 1s gravity ease-in infinite backwards, 5s position linear infinite backwards;
+    animation: 1s bang ease-out infinite backwards, 1s gravity ease-in infinite backwards, 5s position linear infinite backwards;
+  }
+  .content.dashboard .pyro>.before, .content.dashboard .pyro>.after {
+    position: absolute;
+    width: 6px;
+    height: 6px;
+    border-radius: 30%;
+    box-shadow: -120px -218.66667px blue, 248px -16.66667px #00ff84, 190px 16.33333px #002bff, -113px -308.66667px #ffb300, -109px -287.66667px #ffb300, -50px -313.66667px #ff006e, 226px -31.66667px #ff4000, 180px -351.66667px #ffb300, -12px -338.66667px #00f6ff, 220px -388.66667px #99ff00, -69px -27.66667px #ff0400, -111px -339.66667px #6200ff, 155px -237.66667px #00ddff, -152px -380.66667px #00ffd0, -50px -37.66667px #00ffdd, -95px -175.66667px #a6ff00, -88px 10.33333px #0d00ff, 112px -309.66667px #005eff, 69px -415.66667px #ffb300, 168px -100.66667px #ff004c, -244px 24.33333px #ff6600, 97px -325.66667px #ff0066, -211px -182.66667px #00ffa2, 236px -126.66667px #ffb300, 140px -196.66667px #ffb300, 125px -175.66667px #00bbff, 118px -381.66667px #ff002f, 144px -111.66667px #ffae00, 36px -78.66667px #ffb300, -63px -196.66667px #c800ff, -218px -227.66667px #d4ff00, -134px -377.66667px #ea00ff, -36px -412.66667px #ff00d4, 209px -106.66667px #00fff2, 91px -278.66667px #000dff, -22px -191.66667px #9dff00, 139px -392.66667px #a6ff00, 56px -2.66667px #0099ff, -156px -276.66667px #ea00ff, -163px -233.66667px #00fffb, -238px -346.66667px #00ff73, 62px -363.66667px #0088ff, 244px -170.66667px #0062ff, 224px -142.66667px #ffb300, 141px -208.66667px #9000ff, 211px -285.66667px #ff6600, 181px -128.66667px #1e00ff, 90px -123.66667px #ffb300, 189px 70.33333px #00ffc8, -18px -383.66667px #00ff33, 100px -6.66667px #ff008c;
+    -moz-animation: 1s bang ease-out infinite backwards, 1s gravity ease-in infinite backwards, 5s position linear infinite backwards;
+    -webkit-animation: 1s bang ease-out infinite backwards, 1s gravity ease-in infinite backwards, 5s position linear infinite backwards;
+    -o-animation: 1s bang ease-out infinite backwards, 1s gravity ease-in infinite backwards, 5s position linear infinite backwards;
+    -ms-animation: 1s bang ease-out infinite backwards, 1s gravity ease-in infinite backwards, 5s position linear infinite backwards;
+    animation: 1s bang ease-out infinite backwards, 1s gravity ease-in infinite backwards, 5s position linear infinite backwards;
+}
+
+@keyframes band {
+  0% {
+    box-shadow: 0 0 #fbefc4, 0 0 #fbefc4, 0 0 #fbefc4, 0 0 #fbefc4, 0 0 #fbefc4, 0 0 #fbefc4, 0 0 #fbefc4, 0 0 #fbefc4, 0 0 #fbefc4, 0 0 #fbefc4, 0 0 #fbefc4, 0 0 #fbefc4, 0 0 #fbefc4, 0 0 #fbefc4, 0 0 #fbefc4, 0 0 #fbefc4, 0 0 #fbefc4, 0 0 #fbefc4, 0 0 #fbefc4, 0 0 #fbefc4, 0 0 #fbefc4, 0 0 #fbefc4, 0 0 #fbefc4, 0 0 #fbefc4, 0 0 #fbefc4, 0 0 #fbefc4, 0 0 #fbefc4, 0 0 #fbefc4, 0 0 #fbefc4, 0 0 #fbefc4, 0 0 #fbefc4, 0 0 #fbefc4, 0 0 #fbefc4, 0 0 #fbefc4, 0 0 #fbefc4, 0 0 #fbefc4, 0 0 #fbefc4, 0 0 #fbefc4, 0 0 #fbefc4, 0 0 #fbefc4, 0 0 #fbefc4, 0 0 #fbefc4, 0 0 #fbefc4, 0 0 #fbefc4, 0 0 #fbefc4, 0 0 #fbefc4, 0 0 #fbefc4, 0 0 #fbefc4, 0 0 #fbefc4, 0 0 #fbefc4, 0 0 #fbefc4;
+}
+
+}
+
+@keyframes position{
+  0%, 19.9% {
+  margin-top: 10%;
+  margin-left: 40%;
+}
+20%, 39.9% {
+  margin-top: 40%;
+  margin-left: 30%;
+}
+
+40%, 59.9% {
+  margin-top: 20%;
+  margin-left: 70%;
+}
+60%, 79.9% {
+  margin-top: 30%;
+  margin-left: 20%;
+}
+80%, 99.9% {
+  margin-top: 30%;
+  margin-left: 80%;
+}}
+
+@keyframes gravity {
+  100% {
+    transform: translateY(200px);
+    -moz-transform: translateY(200px);
+    -webkit-transform: translateY(200px);
+    -o-transform: translateY(200px);
+    -ms-transform: translateY(200px);
+    opacity: 0;
+}
+  
+}
