@@ -126,7 +126,6 @@ background: rgb(168, 168, 172);
   bottom: 20px;
   width: 15%;
   height: 150px;
-
 }
 
 .campfire{
@@ -139,14 +138,15 @@ background: rgb(168, 168, 172);
 }
 
 .fire-light{
+  position: absolute;
+  bottom: 0;
   width: 100%;
   height: 80%;
   border-radius: 50%;
   background: radial-gradient(#fb8130,rgb(255, 235, 55), transparent 70%);
   mix-blend-mode: overlay;
 }
-.light-overlay{
-}
+
 
 @media screen and (max-width:750px) {
   .container{
